@@ -30,23 +30,32 @@ class MyTabBar: UITabBarController {
         let myCenterNavi = MyNavigation.init(rootViewController: myCenterVC)
         
         let homeTabBarItem = UITabBarItem.init(title: "首页", image: (MyPublic.getImgView("home_tab_home_btn")), selectedImage: (MyPublic.getImgView("home_tab_home_selected_btn")))
+
         let hotSpotTabBarItem = UITabBarItem.init(title: "热点", image: (MyPublic.getImgView("home_tab_saunter_btn")), selectedImage: (MyPublic.getImgView("home_tab_saunter_selected_btn")))
         
         let vipTabBarItem = UITabBarItem.init(title: "会员", image: (MyPublic.getImgView("home_tab_branc_btn")), selectedImage: (MyPublic.getImgView("home_tab_branc_selected_btn")))
         let myCenterTabBarItem = UITabBarItem.init(title: "个人中心", image: (MyPublic.getImgView("home_tab_personal_btn")), selectedImage: (MyPublic.getImgView("home_tab_personal_selected_btn")))
-//        let shopTabBarItem = UITabBarItem.init(title: "商城", image: (MyPublic.getImgView("home_tab_point_btn")), selectedImage: (MyPublic.getImgView("home_tab_point_selected_btn")))
         
         
         homeNavi.tabBarItem = homeTabBarItem
         hotSpotNavi.tabBarItem = hotSpotTabBarItem
         vipNavi.tabBarItem = vipTabBarItem
-//        shopNavi.tabBarItem = shopTabBarItem
         myCenterNavi.tabBarItem = myCenterTabBarItem
         
         tabBarVC.tabBar.tintColor = red
         tabBarVC.viewControllers = [homeNavi, hotSpotNavi, vipNavi, myCenterNavi]
         
         return tabBarVC;
+    }
+    
+    // 创建子控制器
+    func addOneChildViewController(_ childVC:UIViewController, title:String, imageName:String, selectedImageName:String) {
+        
+        childVC.title = title;
+        childVC.tabBarItem.image = UIImage(named: imageName)
+        childVC.tabBarItem.selectedImage = UIImage(named: selectedImageName)?.withRenderingMode(UIImageRenderingMode.alwaysOriginal)
+        let nav = MyNavigation(rootViewController:childVC)
+        self.addChildViewController(nav)
     }
 
     override func viewDidLoad() {
