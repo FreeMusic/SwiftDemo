@@ -16,6 +16,22 @@ class MyNavigation: UINavigationController {
         let navigationTitleAttribute : NSDictionary = NSDictionary(object: UIColor.black,forKey: NSForegroundColorAttributeName as NSCopying)
         self.navigationBar.titleTextAttributes = navigationTitleAttribute as! [AnyHashable: Any] as? [String : AnyObject]
     }
+    
+    override func pushViewController(_ viewController: UIViewController, animated: Bool) {
+        if self.childViewControllers.count >= 1 {
+            //自定义返回按钮
+            viewController.navigationItem.leftBarButtonItem = UIBarButtonItem.init(image: UIImage.init(named: "backWhiteIcon"), style: UIBarButtonItemStyle.done, target: self, action: #selector(backClick))
+//            viewController.navigationItem.setLeftBarButton(UIBarButtonItem.init(image: UIImage.init(named: "backWhiteIcon"), style: UIBarButtonItemStyle.done, target: self, action: #selector(backClick)), animated: true)
+            //隐藏BottomBar
+            viewController.hidesBottomBarWhenPushed = true
+        }
+        
+        super.pushViewController(viewController, animated: animated)
+    }
+    
+    func backClick() {
+        self.popViewController(animated: true)
+    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

@@ -15,5 +15,6 @@
 @property (nonatomic, copy) NSString *nId;
 @property (nonatomic, copy) NSString *desc;
 @property (nonatomic, copy) NSString *time;
+@property (nonatomic, copy) NSString *url;
     
 @end

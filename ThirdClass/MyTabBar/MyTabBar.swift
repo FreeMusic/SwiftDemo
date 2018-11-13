@@ -43,7 +43,7 @@ class MyTabBar: UITabBarController {
 //        shopNavi.tabBarItem = shopTabBarItem
         myCenterNavi.tabBarItem = myCenterTabBarItem
         
-        tabBarVC.tabBar.tintColor = UIColor.red
+        tabBarVC.tabBar.tintColor = red
         tabBarVC.viewControllers = [homeNavi, hotSpotNavi, vipNavi, myCenterNavi]
         
         return tabBarVC;

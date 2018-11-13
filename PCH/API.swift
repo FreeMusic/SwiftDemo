@@ -10,7 +10,19 @@ import Foundation
 /**
  服务器地址
  */
-let ServicerIPAddress = "http://www.zhongleme.net"
+
+#if true
+
+let ServicerIPAddress = "http://www.zhongleme.net"//正式服
+
+#else
+
+let ServicerIPAddress = "http://192.188.88.2:8096"  //(测试服)
+
+#endif
+
+
+
 
 
 /**

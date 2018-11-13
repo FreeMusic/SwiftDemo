@@ -18,10 +18,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         
         self.window?.backgroundColor = UIColor.white
-        self.window?.rootViewController = MyTabBar.MyTabBar()
         
         let isFirstApp = saveDefaults.string(forKey: UserIsFirstApp)
-        
+        if isFirstApp == "NO" {
+            self.changeAppRootVC()
+        }else{
+            saveDefaults.set("NO", forKey: UserIsFirstApp)
+            let tempVC = GuideAppVC()
+            self.window?.rootViewController = tempVC
+        }
         
         return true
     }
@@ -47,6 +52,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func applicationWillTerminate(_ application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
+    
+    func changeAppRootVC(){
+        self.window?.rootViewController = MyTabBar.MyTabBar()
+    }
 }
 
 /*
@@ -65,7 +74,7 @@ func RYQLog<T>(_ messsage : T, file : String = #file, funcName : String = #funct
     #if DEBUG
     
     let fileName = (file as NSString).lastPathComponent
-    print("\(fileName):(\(lineNum)):\(funcName)打印结果:\n\(messsage)")
+    print("所在控制器:\(fileName);  行数:(\(lineNum));  方法名:\(funcName);  打印结果:\n\(messsage)")
     
     #endif
 }

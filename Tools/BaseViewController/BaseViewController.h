@@ -10,4 +10,9 @@
 
 @interface BaseViewController : UIViewController
 
+/**
+ 返回按钮的点击
+ */
+- (void)backClick;
+
 @end

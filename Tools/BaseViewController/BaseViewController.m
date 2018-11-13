@@ -23,18 +23,32 @@
     if ([self respondsToSelector:@selector(edgesForExtendedLayout)]) {
         self.edgesForExtendedLayout = UIRectEdgeNone;
     }
+    
+}
+/**
+ 自定义返回栏
+ */
+- (void)customBackItem{
+    self.navigationController.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"backBlackIcon"] style:UIBarButtonItemStyleDone target:self action:@selector(backClick)];
+}
+/**
+ 返回按钮的点击
+ */
+- (void)backClick{
+    [self.navigationController popViewControllerAnimated:YES];
 }
 
-    //结束输入
+//结束输入
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
     [self.view endEditing:YES];
 }
-    
+
 - (void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:animated];
     self.navigationController.navigationBar.barStyle = UIStatusBarStyleDefault;
-}
     
+}
+
 - (void)viewWillDisappear:(BOOL)animated{
     [super viewWillDisappear:animated];
     [self.view endEditing:YES];

@@ -29,7 +29,6 @@ class NetWorkHelper: NSObject {
         SXYNetWork.requestWith(Method: .get, URL: url, Parameter: params, Token: nil) { (res) in
             do {
                 let dic = self.dataToDictionary(data: res.data!)
-                RYQLog(dic)
                 let data = dic!["data"] as! NSDictionary
                 let list = data["rows"] as! NSArray
                 var dataSource = [Any]()
