@@ -13,7 +13,7 @@ class TicketOrderVC: BaseViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        self.title = "首页"
+        self.title = "会员"
     }
 
 }

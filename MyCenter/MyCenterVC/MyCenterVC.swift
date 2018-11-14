@@ -13,7 +13,7 @@ class MyCenterVC: BaseViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        self.title = "首页"
+        self.title = "个人中心"
     }
 
 }

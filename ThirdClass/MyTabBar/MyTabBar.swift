@@ -30,13 +30,10 @@ class MyTabBar: UITabBarController {
         let myCenterNavi = MyNavigation.init(rootViewController: myCenterVC)
         
         let homeTabBarItem = UITabBarItem.init(title: "首页", image: (MyPublic.getImgView("home_tab_home_btn")), selectedImage: (MyPublic.getImgView("home_tab_home_selected_btn")))
-
         let hotSpotTabBarItem = UITabBarItem.init(title: "热点", image: (MyPublic.getImgView("home_tab_saunter_btn")), selectedImage: (MyPublic.getImgView("home_tab_saunter_selected_btn")))
         
         let vipTabBarItem = UITabBarItem.init(title: "会员", image: (MyPublic.getImgView("home_tab_branc_btn")), selectedImage: (MyPublic.getImgView("home_tab_branc_selected_btn")))
         let myCenterTabBarItem = UITabBarItem.init(title: "个人中心", image: (MyPublic.getImgView("home_tab_personal_btn")), selectedImage: (MyPublic.getImgView("home_tab_personal_selected_btn")))
-        
-        
         homeNavi.tabBarItem = homeTabBarItem
         hotSpotNavi.tabBarItem = hotSpotTabBarItem
         vipNavi.tabBarItem = vipTabBarItem
@@ -60,8 +57,7 @@ class MyTabBar: UITabBarController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
     }
 
     override func didReceiveMemoryWarning() {
