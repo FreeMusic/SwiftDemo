@@ -38,6 +38,8 @@ var KSafeBarHeight:CGFloat! = (kStatusBarHeight > 20) ? 34.0 : 0
 var UserIsFirstApp = "UserIsFirstSkipToApp"
 //存储本地数据类型
 var saveDefaults = UserDefaults.standard
+//灰色背景色
+var BackGroundColor = UIColor.init(red: 245.0 / 255.0, green: 245.0 / 255.0, blue: 245.0/255.0, alpha: 1.0)
 
 
 

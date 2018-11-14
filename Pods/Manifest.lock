@@ -1,5 +1,6 @@
 PODS:
   - Alamofire (4.7.2)
+  - HandyJSON (1.7.2)
   - Kingfisher (3.9.1)
   - MJRefresh (3.1.15.7)
   - SnapKit (4.0.1)
@@ -7,6 +8,7 @@ PODS:
 
 DEPENDENCIES:
   - Alamofire
+  - HandyJSON (~> 1.7.1)
   - Kingfisher (~> 3.9.1)
   - MJRefresh
   - SnapKit
@@ -15,6 +17,7 @@ DEPENDENCIES:
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - Alamofire
+    - HandyJSON
     - Kingfisher
     - MJRefresh
     - SnapKit
@@ -22,11 +25,12 @@ SPEC REPOS:
 
 SPEC CHECKSUMS:
   Alamofire: e4fa87002c137ba2d8d634d2c51fabcda0d5c223
+  HandyJSON: e7ad0483005826baba1d1c251cd98d0aa8bd8cce
   Kingfisher: 6729a0baaa458245bfb8cd5a1296c71c10d6eb6c
   MJRefresh: 697f8ec75ebdbe9207767bb682cf0f51b0d8a41f
   SnapKit: 0de968a9fec17499afa29683b05d0c775b6d1c29
   SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
 
-PODFILE CHECKSUM: 775713b58ab9d18e520527fdd3871390a0ac8177
+PODFILE CHECKSUM: b4435196828542f4f23ca6bf1891af008b0acc68
 
 COCOAPODS: 1.5.3

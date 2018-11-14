@@ -16,7 +16,7 @@ class SXYNetworkReachability: NSObject {
     var reachAble:Bool = {
         var reach = true
         
-        let manager = NetworkReachabilityManager(host: "www.baidu.com")
+        let manager = NetworkReachabilityManager(host: ServicerIPAddress)
         
         manager?.listener = { status in
             switch status {
