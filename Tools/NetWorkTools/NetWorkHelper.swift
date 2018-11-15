@@ -8,6 +8,9 @@
 
 import UIKit
 import SVProgressHUD
+import Alamofire
+import Foundation
+import HandyJSON
 
 enum MethodType {
     case GET
@@ -26,37 +29,30 @@ class NetWorkHelper: NSObject {
     var localPara:[String:Any] = ["pageNumber":"1"]
     //首页
     func requestMainViewControllerData(url:String, params: [String:Any], _ comp:@escaping ((result) -> Void)){
-        SXYNetWork.requestWith(Method: .get, URL: url, Parameter: params, Token: nil) { (res) in
-            do {
-                let dic = self.dataToDictionary(data: res.data!)
-                let data = dic!["data"] as! NSDictionary
-                let list = data["rows"] as! NSArray
-                var dataSource = [Any]()
+        
+        Alamofire.request(ServicerIPAddress+url, method: .get, parameters: params, encoding: URLEncoding.default, headers: nil).responseString { (response) in
+            
+            if response.result.isSuccess {
                 
-                if list.count > 0 {
-                    for elem in list{
-                        let model = HomeModel.init(dictionary: elem as! [AnyHashable : Any])
-                        dataSource.append(model as Any)
-                    }
+                if let jsonString = response.result.value {
+                    let dic = self.getDictionaryFromJSONString(jsonString: jsonString)
+                    RYQLog(dic)
                 }
-                let aResult = result(res_data:data as? [String : Any], list: dataSource)
-                comp(aResult)
-            } 
+            }
         }
     }
     
-    func dataToDictionary(data:Data) ->Dictionary<String, Any>?{
+    /**
+     json转字典
+     */
+    func getDictionaryFromJSONString(jsonString:String) ->NSDictionary{
         
-        do {
-            let json = try JSONSerialization.jsonObject(with: data, options: .mutableContainers)
-            
-            let dic = json as! Dictionary<String, Any>
-            
-            return dic
-        } catch _ {
-            print("失败")
-            
-            return nil
+        let jsonData:Data = jsonString.data(using: .utf8)!
+        
+        let dict = try? JSONSerialization.jsonObject(with: jsonData, options: .mutableContainers)
+        if dict != nil {
+            return dict as! NSDictionary
         }
+        return NSDictionary()
     }
 }

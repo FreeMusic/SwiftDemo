@@ -12,11 +12,12 @@
 		181951492199659F00F81368 /* RYQButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181951482199659F00F81368 /* RYQButton.swift */; };
 		1836915F2195668600ED1EB6 /* String+Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1836915E2195668600ED1EB6 /* String+Category.swift */; };
 		1862DF2A219BCA9F00CC08E4 /* BuyALotteryTicketVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1862DF1A219BCA9F00CC08E4 /* BuyALotteryTicketVC.swift */; };
-		1862DF2B219BCA9F00CC08E4 /* HomeModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1862DF1D219BCA9F00CC08E4 /* HomeModel.m */; };
 		1862DF2C219BCA9F00CC08E4 /* HomeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1862DF20219BCA9F00CC08E4 /* HomeCell.swift */; };
 		1862DF2D219BCA9F00CC08E4 /* MessageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1862DF23219BCA9F00CC08E4 /* MessageVC.swift */; };
 		1862DF2E219BCA9F00CC08E4 /* MyCenterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1862DF26219BCA9F00CC08E4 /* MyCenterVC.swift */; };
 		1862DF2F219BCA9F00CC08E4 /* TicketOrderVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1862DF29219BCA9F00CC08E4 /* TicketOrderVC.swift */; };
+		1862DF33219C065500CC08E4 /* MyModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1862DF32219C065500CC08E4 /* MyModel.swift */; };
+		1862DF35219C069D00CC08E4 /* HomeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1862DF34219C069D00CC08E4 /* HomeModel.swift */; };
 		188B43BB218BDAE0004D206B /* GJUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188B43B7218BDAE0004D206B /* GJUtil.swift */; };
 		188B43BC218BDAE0004D206B /* NetWorkHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188B43B8218BDAE0004D206B /* NetWorkHelper.swift */; };
 		188B43BD218BDAE0004D206B /* SXYNetWork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188B43B9218BDAE0004D206B /* SXYNetWork.swift */; };
@@ -24,7 +25,6 @@
 		188B43C3218BDB6C004D206B /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 188B43C2218BDB6C004D206B /* BaseViewController.m */; };
 		188B43C8218BDBF6004D206B /* MyTableViewVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 188B43C7218BDBF6004D206B /* MyTableViewVC.m */; };
 		188B43CB218BDC04004D206B /* MyTableViewReFreshVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 188B43CA218BDC04004D206B /* MyTableViewReFreshVC.m */; };
-		188B43CF218BDD5C004D206B /* MyModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 188B43CE218BDD5C004D206B /* MyModel.m */; };
 		188B43DD218BE06D004D206B /* MyTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 188B43DC218BE06D004D206B /* MyTableViewCell.m */; };
 		188B43E9218BE46E004D206B /* UILabel+Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188B43E8218BE46E004D206B /* UILabel+Category.swift */; };
 		189AB3A2218C4DA700CA6A02 /* MacroDefinition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189AB3A1218C4DA700CA6A02 /* MacroDefinition.swift */; };
@@ -68,12 +68,12 @@
 		181951482199659F00F81368 /* RYQButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RYQButton.swift; sourceTree = "<group>"; };
 		1836915E2195668600ED1EB6 /* String+Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Category.swift"; sourceTree = "<group>"; };
 		1862DF1A219BCA9F00CC08E4 /* BuyALotteryTicketVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BuyALotteryTicketVC.swift; sourceTree = "<group>"; };
-		1862DF1C219BCA9F00CC08E4 /* HomeModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeModel.h; sourceTree = "<group>"; };
-		1862DF1D219BCA9F00CC08E4 /* HomeModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeModel.m; sourceTree = "<group>"; };
 		1862DF20219BCA9F00CC08E4 /* HomeCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeCell.swift; sourceTree = "<group>"; };
 		1862DF23219BCA9F00CC08E4 /* MessageVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageVC.swift; sourceTree = "<group>"; };
 		1862DF26219BCA9F00CC08E4 /* MyCenterVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyCenterVC.swift; sourceTree = "<group>"; };
 		1862DF29219BCA9F00CC08E4 /* TicketOrderVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TicketOrderVC.swift; sourceTree = "<group>"; };
+		1862DF32219C065500CC08E4 /* MyModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyModel.swift; sourceTree = "<group>"; };
+		1862DF34219C069D00CC08E4 /* HomeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeModel.swift; sourceTree = "<group>"; };
 		188B43B7218BDAE0004D206B /* GJUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GJUtil.swift; sourceTree = "<group>"; };
 		188B43B8218BDAE0004D206B /* NetWorkHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetWorkHelper.swift; sourceTree = "<group>"; };
 		188B43B9218BDAE0004D206B /* SXYNetWork.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SXYNetWork.swift; sourceTree = "<group>"; };
@@ -84,8 +84,6 @@
 		188B43C7218BDBF6004D206B /* MyTableViewVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyTableViewVC.m; sourceTree = "<group>"; };
 		188B43C9218BDC04004D206B /* MyTableViewReFreshVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyTableViewReFreshVC.h; sourceTree = "<group>"; };
 		188B43CA218BDC04004D206B /* MyTableViewReFreshVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyTableViewReFreshVC.m; sourceTree = "<group>"; };
-		188B43CD218BDD5C004D206B /* MyModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyModel.h; sourceTree = "<group>"; };
-		188B43CE218BDD5C004D206B /* MyModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyModel.m; sourceTree = "<group>"; };
 		188B43D7218BDE5F004D206B /* StarAppHeaderBridge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StarAppHeaderBridge.h; sourceTree = "<group>"; };
 		188B43DB218BE06D004D206B /* MyTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyTableViewCell.h; sourceTree = "<group>"; };
 		188B43DC218BE06D004D206B /* MyTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyTableViewCell.m; sourceTree = "<group>"; };
@@ -210,8 +208,7 @@
 		1862DF1B219BCA9F00CC08E4 /* HomeModel */ = {
 			isa = PBXGroup;
 			children = (
-				1862DF1C219BCA9F00CC08E4 /* HomeModel.h */,
-				1862DF1D219BCA9F00CC08E4 /* HomeModel.m */,
+				1862DF34219C069D00CC08E4 /* HomeModel.swift */,
 			);
 			path = HomeModel;
 			sourceTree = "<group>";
@@ -321,8 +318,7 @@
 		188B43CC218BDD4F004D206B /* MyModel */ = {
 			isa = PBXGroup;
 			children = (
-				188B43CD218BDD5C004D206B /* MyModel.h */,
-				188B43CE218BDD5C004D206B /* MyModel.m */,
+				1862DF32219C065500CC08E4 /* MyModel.swift */,
 			);
 			path = MyModel;
 			sourceTree = "<group>";
@@ -712,6 +708,7 @@
 			files = (
 				1836915F2195668600ED1EB6 /* String+Category.swift in Sources */,
 				189AB3A4218C4E7300CA6A02 /* API.swift in Sources */,
+				1862DF35219C069D00CC08E4 /* HomeModel.swift in Sources */,
 				181951432199505E00F81368 /* RYQWebViewVC.swift in Sources */,
 				181951492199659F00F81368 /* RYQButton.swift in Sources */,
 				5436A254207260160063A187 /* MyPublic.swift in Sources */,
@@ -719,7 +716,6 @@
 				189AB3A2218C4DA700CA6A02 /* MacroDefinition.swift in Sources */,
 				188B43BB218BDAE0004D206B /* GJUtil.swift in Sources */,
 				188B43E9218BE46E004D206B /* UILabel+Category.swift in Sources */,
-				188B43CF218BDD5C004D206B /* MyModel.m in Sources */,
 				1862DF2C219BCA9F00CC08E4 /* HomeCell.swift in Sources */,
 				188B43C3218BDB6C004D206B /* BaseViewController.m in Sources */,
 				1862DF2A219BCA9F00CC08E4 /* BuyALotteryTicketVC.swift in Sources */,
@@ -730,13 +726,13 @@
 				188B43C8218BDBF6004D206B /* MyTableViewVC.m in Sources */,
 				1862DF2D219BCA9F00CC08E4 /* MessageVC.swift in Sources */,
 				189AB3A7218C4F7500CA6A02 /* UIColor+Category.swift in Sources */,
+				1862DF33219C065500CC08E4 /* MyModel.swift in Sources */,
 				5436A23420725D610063A187 /* MyTabBar.swift in Sources */,
 				188B43DD218BE06D004D206B /* MyTableViewCell.m in Sources */,
 				5436A25220725FE90063A187 /* MyNavigation.swift in Sources */,
 				188B43BE218BDAE0004D206B /* SXYNetworkReachability.swift in Sources */,
 				188B43BC218BDAE0004D206B /* NetWorkHelper.swift in Sources */,
 				188B43BD218BDAE0004D206B /* SXYNetWork.swift in Sources */,
-				1862DF2B219BCA9F00CC08E4 /* HomeModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

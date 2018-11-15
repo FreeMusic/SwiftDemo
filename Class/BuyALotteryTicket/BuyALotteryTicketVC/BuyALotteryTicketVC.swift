@@ -34,7 +34,7 @@ class BuyALotteryTicketVC: MyTableViewReFreshVC {
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let model:HomeModel = self.dataSource[indexPath.row] as! HomeModel
         let webVC = RYQWebViewVC()
-        webVC.url = model.url
+        webVC.url = model.url!
         self.navigationController?.pushViewController(webVC, animated: true)
     }
     
