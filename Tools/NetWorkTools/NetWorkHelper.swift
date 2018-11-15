@@ -35,8 +35,15 @@ class NetWorkHelper: NSObject {
             if response.result.isSuccess {
                 
                 if let jsonString = response.result.value {
-                    let dic = self.getDictionaryFromJSONString(jsonString: jsonString)
-                    RYQLog(dic)
+                    if let outHomeModel = OutHomeModel.deserialize(from: jsonString){
+                        if let jsonDataString = outHomeModel.data{
+                            RYQLog(jsonDataString)
+//                            let
+//                            if let dataModel = MyData.deserialize(from: jsonDataString){
+//                                RYQLog(dataModel.rows)
+//                            }
+                        }
+                    }
                 }
             }
         }
@@ -54,5 +61,19 @@ class NetWorkHelper: NSObject {
             return dict as! NSDictionary
         }
         return NSDictionary()
+    }
+    /**
+     json转数组
+     */
+    func getArrayFromJSONString(jsonString:String) ->NSArray{
+        
+        let jsonData:Data = jsonString.data(using: .utf8)!
+        
+        let array = try? JSONSerialization.jsonObject(with: jsonData, options: .mutableContainers)
+        if array != nil {
+            return array as! NSArray
+        }
+        return array as! NSArray
+        
     }
 }

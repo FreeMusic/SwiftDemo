@@ -24,13 +24,22 @@ struct TagModel: HandyJSON {
 }
 
 struct OutHomeModel: HandyJSON {
+    
     var code:String!
     var msg:String!
-    var data:[Rows]?
+    var data:MyData?
+    
+}
+
+struct MyData: HandyJSON {
+    var pc:String!
+    var pi: Int?
+    var ps: Int?
+    var rows: String?
 }
 
 struct Rows: HandyJSON {
-    var row: [HomeModel]?
+    var row: HomeModel?
 }
 
 struct HomeModel: HandyJSON {
