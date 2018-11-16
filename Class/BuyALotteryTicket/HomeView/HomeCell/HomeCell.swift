@@ -44,9 +44,7 @@ class HomeCell: MyTableViewCell {
     func setMyHomeModel(model: HomeModel) {
         self.nameLabel.text = model.title
         let imgURLs = model.imgUrl?.components(separatedBy: ",")
-        if !(imgURLs?.last?.isEmpty)! {
-            self.imgView.kf.setImage(with: ImageResource(downloadURL: URL.init(string: (imgURLs?.last!)!)!))
-        }
+        self.imgView.setImage(imageName: (imgURLs?.last!)!)
     }
     
     required init?(coder aDecoder: NSCoder) {

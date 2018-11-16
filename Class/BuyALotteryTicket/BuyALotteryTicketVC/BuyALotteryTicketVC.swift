@@ -26,8 +26,10 @@ class BuyALotteryTicketVC: MyTableViewReFreshVC {
     
     override func setUpData() {
         let localPara:[String:Any] = ["pageNumber":NSString.init(format: "%d", self.page)]
-        NetWorkHelper.tool.requestMainViewControllerData(url: NewsList, params: localPara) { (result) in
-            self.refreshTableView(withDataSource: result.list)
+        NetWorkHelper.tool.requestMainViewControllerData(url: NewsList, params: localPara, success: { (data) in
+            self.refreshTableView(withDataSource: data.list)
+        }) { (error) in
+            
         }
     }
     

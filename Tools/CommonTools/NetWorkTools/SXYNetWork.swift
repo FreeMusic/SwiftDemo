@@ -71,7 +71,6 @@ class SXYNetWork: NSObject {
             //网络没有连接
             
         }
-        
     }
     
     /**

@@ -7,10 +7,6 @@
 //
 
 import UIKit
-import SVProgressHUD
-import Alamofire
-import Foundation
-import HandyJSON
 
 enum MethodType {
     case GET
@@ -20,28 +16,20 @@ enum MethodType {
 class NetWorkHelper: NSObject {
     
     static let tool = NetWorkHelper()
-    
-    struct result {
-        var data:[String:Any]?
+    //模型数组
+    var dataSource = [Any]()
+    //模型
+    var model:Any?
+    /**
+     请求结果
+     */
+    struct Result {
+        var model:Any
         var list:Array<Any>
     }
-
-    //首页
-    func requestMainViewControllerData(url:String, params: [String:Any], _ comp:@escaping ((result) -> Void)){
-        
-        SXYNetWork.work.GetRequest(url: url, paramters: params) { (requestData) in
-            var dataSource = [Any]()
-            let data = Factory.getDictionaryFromJSONString(jsonString: requestData.json!)
-            
-            if let outHomeModel = JSONDeserializer<OutHomeModel>.deserializeFrom(json: requestData.json){
-                let myDataModel = outHomeModel.data
-                myDataModel?.rows?.forEach({ (model) in
-                    dataSource.append(model as Any)
-                })
-            }
-            let aResult = result(data:data as? [String : Any] , list: dataSource)
-            comp(aResult)
-        }
-    }
-
+    
+    //请求成功后的闭包回调
+    typealias successHandler = (Result) -> Void
+    //请求失败后的闭包回调
+    typealias failHandler = (Any) -> Void
 }

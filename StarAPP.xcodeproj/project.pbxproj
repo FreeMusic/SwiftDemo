@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		1816B7E0219EB63F00E21390 /* MyModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1816B7C6219EB63F00E21390 /* MyModel.swift */; };
-		1816B7E1219EB63F00E21390 /* GJUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1816B7C8219EB63F00E21390 /* GJUtil.swift */; };
 		1816B7E2219EB63F00E21390 /* NetWorkHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1816B7C9219EB63F00E21390 /* NetWorkHelper.swift */; };
 		1816B7E3219EB63F00E21390 /* SXYNetWork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1816B7CA219EB63F00E21390 /* SXYNetWork.swift */; };
 		1816B7E4219EB63F00E21390 /* SXYNetworkReachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1816B7CB219EB63F00E21390 /* SXYNetworkReachability.swift */; };
@@ -20,6 +19,8 @@
 		1816B7EA219EB63F00E21390 /* MyTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1816B7DD219EB63F00E21390 /* MyTableViewCell.m */; };
 		1816B7EB219EB63F00E21390 /* RYQButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1816B7DF219EB63F00E21390 /* RYQButton.swift */; };
 		1816B7EE219EB67B00E21390 /* Factory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1816B7ED219EB67B00E21390 /* Factory.swift */; };
+		1816B7F1219EB91E00E21390 /* UIImageView+Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1816B7F0219EB91E00E21390 /* UIImageView+Category.swift */; };
+		1816B7F3219EC09900E21390 /* NetWorkHelper+HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1816B7F2219EC09900E21390 /* NetWorkHelper+HomeVC.swift */; };
 		1836915F2195668600ED1EB6 /* String+Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1836915E2195668600ED1EB6 /* String+Category.swift */; };
 		1862DF2A219BCA9F00CC08E4 /* BuyALotteryTicketVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1862DF1A219BCA9F00CC08E4 /* BuyALotteryTicketVC.swift */; };
 		1862DF2C219BCA9F00CC08E4 /* HomeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1862DF20219BCA9F00CC08E4 /* HomeCell.swift */; };
@@ -65,7 +66,6 @@
 /* Begin PBXFileReference section */
 		0A77C52CB602BE64753089A7 /* Pods_StarAPPUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StarAPPUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1816B7C6219EB63F00E21390 /* MyModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyModel.swift; sourceTree = "<group>"; };
-		1816B7C8219EB63F00E21390 /* GJUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GJUtil.swift; sourceTree = "<group>"; };
 		1816B7C9219EB63F00E21390 /* NetWorkHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetWorkHelper.swift; sourceTree = "<group>"; };
 		1816B7CA219EB63F00E21390 /* SXYNetWork.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SXYNetWork.swift; sourceTree = "<group>"; };
 		1816B7CB219EB63F00E21390 /* SXYNetworkReachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SXYNetworkReachability.swift; sourceTree = "<group>"; };
@@ -81,6 +81,8 @@
 		1816B7DD219EB63F00E21390 /* MyTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyTableViewCell.m; sourceTree = "<group>"; };
 		1816B7DF219EB63F00E21390 /* RYQButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RYQButton.swift; sourceTree = "<group>"; };
 		1816B7ED219EB67B00E21390 /* Factory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Factory.swift; sourceTree = "<group>"; };
+		1816B7F0219EB91E00E21390 /* UIImageView+Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Category.swift"; sourceTree = "<group>"; };
+		1816B7F2219EC09900E21390 /* NetWorkHelper+HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NetWorkHelper+HomeVC.swift"; sourceTree = "<group>"; };
 		1836915E2195668600ED1EB6 /* String+Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Category.swift"; sourceTree = "<group>"; };
 		1862DF1A219BCA9F00CC08E4 /* BuyALotteryTicketVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BuyALotteryTicketVC.swift; sourceTree = "<group>"; };
 		1862DF20219BCA9F00CC08E4 /* HomeCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeCell.swift; sourceTree = "<group>"; };
@@ -167,10 +169,10 @@
 		1816B7C7219EB63F00E21390 /* NetWorkTools */ = {
 			isa = PBXGroup;
 			children = (
-				1816B7C8219EB63F00E21390 /* GJUtil.swift */,
 				1816B7C9219EB63F00E21390 /* NetWorkHelper.swift */,
 				1816B7CA219EB63F00E21390 /* SXYNetWork.swift */,
 				1816B7CB219EB63F00E21390 /* SXYNetworkReachability.swift */,
+				1816B7F2219EC09900E21390 /* NetWorkHelper+HomeVC.swift */,
 			);
 			path = NetWorkTools;
 			sourceTree = "<group>";
@@ -262,6 +264,14 @@
 				1816B7ED219EB67B00E21390 /* Factory.swift */,
 			);
 			path = Factory;
+			sourceTree = "<group>";
+		};
+		1816B7EF219EB8ED00E21390 /* UIImageView */ = {
+			isa = PBXGroup;
+			children = (
+				1816B7F0219EB91E00E21390 /* UIImageView+Category.swift */,
+			);
+			path = UIImageView;
 			sourceTree = "<group>";
 		};
 		1836915D2195665500ED1EB6 /* String */ = {
@@ -376,6 +386,7 @@
 		188B43E4218BE266004D206B /* Category */ = {
 			isa = PBXGroup;
 			children = (
+				1816B7EF219EB8ED00E21390 /* UIImageView */,
 				1836915D2195665500ED1EB6 /* String */,
 				189AB3A5218C4F6500CA6A02 /* UIColor */,
 				188B43E5218BE266004D206B /* UILabel */,
@@ -749,6 +760,7 @@
 				1816B7E8219EB63F00E21390 /* MyTableViewVC.m in Sources */,
 				5436A254207260160063A187 /* MyPublic.swift in Sources */,
 				189AB3A2218C4DA700CA6A02 /* MacroDefinition.swift in Sources */,
+				1816B7F1219EB91E00E21390 /* UIImageView+Category.swift in Sources */,
 				188B43E9218BE46E004D206B /* UILabel+Category.swift in Sources */,
 				1816B7E7219EB63F00E21390 /* MyTableViewReFreshVC.m in Sources */,
 				1816B7EA219EB63F00E21390 /* MyTableViewCell.m in Sources */,
@@ -765,9 +777,9 @@
 				5436A23420725D610063A187 /* MyTabBar.swift in Sources */,
 				1816B7E9219EB63F00E21390 /* RYQWebViewVC.swift in Sources */,
 				1816B7E2219EB63F00E21390 /* NetWorkHelper.swift in Sources */,
-				1816B7E1219EB63F00E21390 /* GJUtil.swift in Sources */,
 				5436A25220725FE90063A187 /* MyNavigation.swift in Sources */,
 				1816B7E5219EB63F00E21390 /* BaseViewController.m in Sources */,
+				1816B7F3219EC09900E21390 /* NetWorkHelper+HomeVC.swift in Sources */,
 				1816B7E0219EB63F00E21390 /* MyModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
