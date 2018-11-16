@@ -9,20 +9,6 @@
 import UIKit
 import HandyJSON
 
-struct responseModel: HandyJSON {
-    
-    var data:[TagModel]?
-    var error: Int!
-}
-struct TagModel: HandyJSON {
-    
-    var nickname: String?
-    var vertical_src: String?
-    var ranktype: String?
-    var room_src: String?
-    var cate_id: Int?
-}
-
 struct OutHomeModel: HandyJSON {
     
     var code:String!
@@ -35,11 +21,7 @@ struct MyData: HandyJSON {
     var pc:String!
     var pi: Int?
     var ps: Int?
-    var rows: String?
-}
-
-struct Rows: HandyJSON {
-    var row: HomeModel?
+    var rows: [HomeModel]?
 }
 
 struct HomeModel: HandyJSON {
