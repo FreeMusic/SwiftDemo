@@ -46,7 +46,6 @@
 - (void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:animated];
     self.navigationController.navigationBar.barStyle = UIStatusBarStyleDefault;
-    
 }
 
 - (void)viewWillDisappear:(BOOL)animated{

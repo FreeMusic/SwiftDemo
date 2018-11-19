@@ -59,20 +59,21 @@ class RYQWebViewVC: BaseViewController,WKUIDelegate,WKNavigationDelegate,WKScrip
      */
     func createCloseButtonAndBackButton(){
         //返回按钮
-        let backButton = RYQButton().initButton(frame: CGRect.init(x: 0, y: 0, width: 44, height: 44), image: "backBlackIcon", action: #selector(backButtonClick), target: self)
-        let backButtonItem = UIBarButtonItem.init(customView: backButton)
+        let backBtn = RYQButton.initButton(frame: CGRect.init(), image: "backBlackIcon", action: #selector(backButtonClick), target: self)
+        let backItem = UIBarButtonItem(customView: backBtn)
         //关闭按钮
-        let closeButton = RYQButton.init().initTextButton(frame: CGRect.init(x: 0, y: 0, width: 44, height: 44), title: "关闭", action: #selector(closeButtonClick), target: self, font: 28, style: RYQButton.TitleLabelFontStyle.system, backColor: RYQButton.ButtonBackGColor.clear)
-        let closeButtonItem =  UIBarButtonItem.init(customView: closeButton)
+        let closeBtn = RYQButton.initTextButton(frame: CGRect.init(), title: "关闭", action: #selector(closeButtonClick), target: self, font: 28, style: RYQButton.TitleLabelFontStyle.system, backColor: RYQButton.ButtonBackGColor.clear)
+        closeBtn.setTitleColor(black, for: UIControlState.normal)
+        let closeItem = UIBarButtonItem(customView: closeBtn)
         
-        self.navigationController?.navigationItem.leftBarButtonItems = [backButtonItem, closeButtonItem]
+        self.navigationItem.leftBarButtonItems = [backItem, closeItem]
     }
     
     func backButtonClick(){
         if self.wkWebView.canGoBack {
             self.wkWebView.goBack()
         }else{
-            self.navigationController?.popViewController(animated: true)
+            self.closeButtonClick()
         }
     }
     

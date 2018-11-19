@@ -19,6 +19,9 @@ class SXYNetworkReachability: NSObject {
         let manager = NetworkReachabilityManager(host: ServicerIPAddress)
         
         manager?.listener = { status in
+            
+            RYQLog(status)
+            
             switch status {
             case .notReachable:
                 reach = false

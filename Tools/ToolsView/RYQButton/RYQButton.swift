@@ -35,12 +35,14 @@ class RYQButton: UIButton {
     ///   - image: 按钮图片
     ///   - action: 按钮点击事件
     ///   - target: 按钮target
-    func initButton(frame:CGRect, image:String, action:Selector, target:Any) -> RYQButton {
-        self.frame = frame
-        self.setImage(UIImage.init(named: image), for: UIControlState.normal)
-        self.addTarget(target, action: action, for: UIControlEvents.touchUpInside)
+    class func initButton(frame:CGRect, image:String, action:Selector, target:Any) -> RYQButton {
+        let button = RYQButton()
         
-        return self
+        button.frame = frame
+        button.setImage(UIImage.init(named: image), for: UIControlState.normal)
+        button.addTarget(target, action: action, for: UIControlEvents.touchUpInside)
+        
+        return button
     }
     
     /// 文字按钮
@@ -53,14 +55,15 @@ class RYQButton: UIButton {
     ///   - font: 字体大小
     ///   - style: 字体类型
     ///   - backColor: 按钮背景颜色
-    func initTextButton(frame:CGRect, title:String, action:Selector, target:Any, font:Int, style:TitleLabelFontStyle, backColor:ButtonBackGColor) -> RYQButton {
-        self.frame = frame
-        self.setTitle(title, for: UIControlState.normal)
-        self.addTarget(target, action: action, for: UIControlEvents.touchUpInside)
-        self.swichTitleLabelFontStyle(font: font, style: style)
-        self.swichTitleLabelBackGColor(backColor: backColor)
+    class func initTextButton(frame:CGRect, title:String, action:Selector, target:Any, font:Int, style:TitleLabelFontStyle, backColor:ButtonBackGColor) -> RYQButton {
+        let button = RYQButton()
+        button.frame = frame
+        button.setTitle(title, for: UIControlState.normal)
+        button.addTarget(target, action: action, for: UIControlEvents.touchUpInside)
+        button.swichTitleLabelFontStyle(font: font, style: style)
+        button.swichTitleLabelBackGColor(backColor: backColor)
         
-        return self
+        return button
     }
     
     func swichTitleLabelFontStyle(font:Int, style:TitleLabelFontStyle){
