@@ -20,7 +20,7 @@ class HomeCell: MyTableViewCell {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         nameLabel = self.initLabel(frame: CGRect.init(x: 0, y: 0, width: UIScreen.main.bounds.size.width, height: 30), text: "姓名：小三")
         self.selectionStyle = UITableViewCellSelectionStyle.none
-
+        
         imgView = UIImageView.init()
         self.imgView.backgroundColor = UIColor.FromRGB(hexadecimal: "#778ef2")
         self.addSubview(imgView)

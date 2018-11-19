@@ -14,6 +14,7 @@ class MessageVC: BaseViewController {
         super.viewDidLoad()
 
         self.title = "热点"
+        
     }
 
 }

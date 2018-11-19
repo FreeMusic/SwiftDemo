@@ -35,10 +35,8 @@ class RYQButton: UIButton {
     ///   - image: 按钮图片
     ///   - action: 按钮点击事件
     ///   - target: 按钮target
-    class func initButton(frame:CGRect, image:String, action:Selector, target:Any) -> RYQButton {
+    class func initButton(image:String, action:Selector, target:Any) -> RYQButton {
         let button = RYQButton()
-        
-        button.frame = frame
         button.setImage(UIImage.init(named: image), for: UIControlState.normal)
         button.addTarget(target, action: action, for: UIControlEvents.touchUpInside)
         
@@ -55,9 +53,8 @@ class RYQButton: UIButton {
     ///   - font: 字体大小
     ///   - style: 字体类型
     ///   - backColor: 按钮背景颜色
-    class func initTextButton(frame:CGRect, title:String, action:Selector, target:Any, font:Int, style:TitleLabelFontStyle, backColor:ButtonBackGColor) -> RYQButton {
+    class func initTextButton(title:String, action:Selector, target:Any, font:Int, style:TitleLabelFontStyle, backColor:ButtonBackGColor) -> RYQButton {
         let button = RYQButton()
-        button.frame = frame
         button.setTitle(title, for: UIControlState.normal)
         button.addTarget(target, action: action, for: UIControlEvents.touchUpInside)
         button.swichTitleLabelFontStyle(font: font, style: style)

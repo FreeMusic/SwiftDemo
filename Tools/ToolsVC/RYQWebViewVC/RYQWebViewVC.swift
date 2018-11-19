@@ -59,10 +59,10 @@ class RYQWebViewVC: BaseViewController,WKUIDelegate,WKNavigationDelegate,WKScrip
      */
     func createCloseButtonAndBackButton(){
         //返回按钮
-        let backBtn = RYQButton.initButton(frame: CGRect.init(), image: "backBlackIcon", action: #selector(backButtonClick), target: self)
+        let backBtn = RYQButton.initButton(image: "backBlackIcon", action: #selector(backButtonClick), target: self)
         let backItem = UIBarButtonItem(customView: backBtn)
         //关闭按钮
-        let closeBtn = RYQButton.initTextButton(frame: CGRect.init(), title: "关闭", action: #selector(closeButtonClick), target: self, font: 28, style: RYQButton.TitleLabelFontStyle.system, backColor: RYQButton.ButtonBackGColor.clear)
+        let closeBtn = RYQButton.initTextButton(title: "关闭", action: #selector(closeButtonClick), target: self, font: 28, style: RYQButton.TitleLabelFontStyle.system, backColor: RYQButton.ButtonBackGColor.clear)
         closeBtn.setTitleColor(black, for: UIControlState.normal)
         let closeItem = UIBarButtonItem(customView: closeBtn)
         

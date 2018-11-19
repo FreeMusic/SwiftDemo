@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		180FF65D21A245D100FE9981 /* RankTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180FF65C21A245D100FE9981 /* RankTools.swift */; };
-		180FF66021A25A4C00FE9981 /* RYQWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180FF65F21A25A4C00FE9981 /* RYQWebView.swift */; };
+		180FF66721A2B63700FE9981 /* UIButton+Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180FF66621A2B63700FE9981 /* UIButton+Category.swift */; };
 		1816B7E0219EB63F00E21390 /* MyModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1816B7C6219EB63F00E21390 /* MyModel.swift */; };
 		1816B7E2219EB63F00E21390 /* NetWorkHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1816B7C9219EB63F00E21390 /* NetWorkHelper.swift */; };
 		1816B7E3219EB63F00E21390 /* SXYNetWork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1816B7CA219EB63F00E21390 /* SXYNetWork.swift */; };
@@ -68,7 +68,7 @@
 /* Begin PBXFileReference section */
 		0A77C52CB602BE64753089A7 /* Pods_StarAPPUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StarAPPUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		180FF65C21A245D100FE9981 /* RankTools.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RankTools.swift; sourceTree = "<group>"; };
-		180FF65F21A25A4C00FE9981 /* RYQWebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RYQWebView.swift; sourceTree = "<group>"; };
+		180FF66621A2B63700FE9981 /* UIButton+Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+Category.swift"; sourceTree = "<group>"; };
 		1816B7C6219EB63F00E21390 /* MyModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyModel.swift; sourceTree = "<group>"; };
 		1816B7C9219EB63F00E21390 /* NetWorkHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetWorkHelper.swift; sourceTree = "<group>"; };
 		1816B7CA219EB63F00E21390 /* SXYNetWork.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SXYNetWork.swift; sourceTree = "<group>"; };
@@ -160,12 +160,12 @@
 			path = RankTools;
 			sourceTree = "<group>";
 		};
-		180FF65E21A25A3100FE9981 /* RYQWebView */ = {
+		180FF66521A2B62C00FE9981 /* UIButton */ = {
 			isa = PBXGroup;
 			children = (
-				180FF65F21A25A4C00FE9981 /* RYQWebView.swift */,
+				180FF66621A2B63700FE9981 /* UIButton+Category.swift */,
 			);
-			path = RYQWebView;
+			path = UIButton;
 			sourceTree = "<group>";
 		};
 		1816B7C4219EB63F00E21390 /* CommonTools */ = {
@@ -256,7 +256,6 @@
 		1816B7DA219EB63F00E21390 /* ToolsView */ = {
 			isa = PBXGroup;
 			children = (
-				180FF65E21A25A3100FE9981 /* RYQWebView */,
 				1816B7DB219EB63F00E21390 /* MyTableViewCell */,
 				1816B7DE219EB63F00E21390 /* RYQButton */,
 			);
@@ -408,6 +407,7 @@
 		188B43E4218BE266004D206B /* Category */ = {
 			isa = PBXGroup;
 			children = (
+				180FF66521A2B62C00FE9981 /* UIButton */,
 				1816B7EF219EB8ED00E21390 /* UIImageView */,
 				1836915D2195665500ED1EB6 /* String */,
 				189AB3A5218C4F6500CA6A02 /* UIColor */,
@@ -790,13 +790,13 @@
 				1816B7EA219EB63F00E21390 /* MyTableViewCell.m in Sources */,
 				1816B7E4219EB63F00E21390 /* SXYNetworkReachability.swift in Sources */,
 				1862DF2C219BCA9F00CC08E4 /* HomeCell.swift in Sources */,
-				180FF66021A25A4C00FE9981 /* RYQWebView.swift in Sources */,
 				1862DF2A219BCA9F00CC08E4 /* BuyALotteryTicketVC.swift in Sources */,
 				1862DF2E219BCA9F00CC08E4 /* MyCenterVC.swift in Sources */,
 				5436A1F1207256490063A187 /* AppDelegate.swift in Sources */,
 				180FF65D21A245D100FE9981 /* RankTools.swift in Sources */,
 				1862DF2F219BCA9F00CC08E4 /* TicketOrderVC.swift in Sources */,
 				1862DF2D219BCA9F00CC08E4 /* MessageVC.swift in Sources */,
+				180FF66721A2B63700FE9981 /* UIButton+Category.swift in Sources */,
 				189AB3A7218C4F7500CA6A02 /* UIColor+Category.swift in Sources */,
 				1816B7E3219EB63F00E21390 /* SXYNetWork.swift in Sources */,
 				1816B7EE219EB67B00E21390 /* Factory.swift in Sources */,
