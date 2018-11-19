@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		180FF65D21A245D100FE9981 /* RankTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180FF65C21A245D100FE9981 /* RankTools.swift */; };
 		180FF66721A2B63700FE9981 /* UIButton+Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180FF66621A2B63700FE9981 /* UIButton+Category.swift */; };
+		180FF66A21A2CBCC00FE9981 /* UITextFiled+Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180FF66921A2CBCC00FE9981 /* UITextFiled+Category.swift */; };
 		1816B7E0219EB63F00E21390 /* MyModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1816B7C6219EB63F00E21390 /* MyModel.swift */; };
 		1816B7E2219EB63F00E21390 /* NetWorkHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1816B7C9219EB63F00E21390 /* NetWorkHelper.swift */; };
 		1816B7E3219EB63F00E21390 /* SXYNetWork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1816B7CA219EB63F00E21390 /* SXYNetWork.swift */; };
@@ -69,6 +70,7 @@
 		0A77C52CB602BE64753089A7 /* Pods_StarAPPUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StarAPPUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		180FF65C21A245D100FE9981 /* RankTools.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RankTools.swift; sourceTree = "<group>"; };
 		180FF66621A2B63700FE9981 /* UIButton+Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+Category.swift"; sourceTree = "<group>"; };
+		180FF66921A2CBCC00FE9981 /* UITextFiled+Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextFiled+Category.swift"; sourceTree = "<group>"; };
 		1816B7C6219EB63F00E21390 /* MyModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyModel.swift; sourceTree = "<group>"; };
 		1816B7C9219EB63F00E21390 /* NetWorkHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetWorkHelper.swift; sourceTree = "<group>"; };
 		1816B7CA219EB63F00E21390 /* SXYNetWork.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SXYNetWork.swift; sourceTree = "<group>"; };
@@ -166,6 +168,14 @@
 				180FF66621A2B63700FE9981 /* UIButton+Category.swift */,
 			);
 			path = UIButton;
+			sourceTree = "<group>";
+		};
+		180FF66821A2CBBF00FE9981 /* UITextFiled */ = {
+			isa = PBXGroup;
+			children = (
+				180FF66921A2CBCC00FE9981 /* UITextFiled+Category.swift */,
+			);
+			path = UITextFiled;
 			sourceTree = "<group>";
 		};
 		1816B7C4219EB63F00E21390 /* CommonTools */ = {
@@ -407,6 +417,7 @@
 		188B43E4218BE266004D206B /* Category */ = {
 			isa = PBXGroup;
 			children = (
+				180FF66821A2CBBF00FE9981 /* UITextFiled */,
 				180FF66521A2B62C00FE9981 /* UIButton */,
 				1816B7EF219EB8ED00E21390 /* UIImageView */,
 				1836915D2195665500ED1EB6 /* String */,
@@ -781,6 +792,7 @@
 				1862DF35219C069D00CC08E4 /* HomeModel.swift in Sources */,
 				1816B7E6219EB63F00E21390 /* GuideAppVC.swift in Sources */,
 				1816B7EB219EB63F00E21390 /* RYQButton.swift in Sources */,
+				180FF66A21A2CBCC00FE9981 /* UITextFiled+Category.swift in Sources */,
 				1816B7E8219EB63F00E21390 /* MyTableViewVC.m in Sources */,
 				5436A254207260160063A187 /* MyPublic.swift in Sources */,
 				189AB3A2218C4DA700CA6A02 /* MacroDefinition.swift in Sources */,

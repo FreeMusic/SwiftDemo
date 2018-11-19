@@ -32,13 +32,11 @@ extension UIButton {
         get {
             return (objc_getAssociatedObject(self, &colorKey) as? RYQButtonBackColor)!
         }
-        
         set(newValue) {
             objc_setAssociatedObject(self, &colorKey, newValue, objc_AssociationPolicy(rawValue: objc_AssociationPolicy.OBJC_ASSOCIATION_RETAIN.rawValue)!)
             //color属性的赋值判断
             self.setColor(color: newValue)
         }
-        
     }
     /**
      color属性的赋值判断

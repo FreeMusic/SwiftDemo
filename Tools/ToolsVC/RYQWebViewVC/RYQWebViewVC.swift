@@ -24,6 +24,7 @@ class RYQWebViewVC: BaseViewController,WKUIDelegate,WKNavigationDelegate,WKScrip
     var url:String = ""//链接
     var wkWebView = WKWebView()//网页
     var progressView: UIProgressView?
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -34,7 +35,7 @@ class RYQWebViewVC: BaseViewController,WKUIDelegate,WKNavigationDelegate,WKScrip
         wkWebView.navigationDelegate = self
         self.view.addSubview(wkWebView)
         //进度条
-        progressView = UIProgressView(frame: CGRect(x: 0, y: 0, width: UIScreen.main.bounds.size.width, height: 2))
+        progressView = UIProgressView(frame: CGRect(x: 0, y: 0, width: kScreenWidth, height: 2))
         progressView?.trackTintColor = UIColor.white
         progressView?.progressTintColor = UIColor.orange
         self.view.addSubview(progressView!)
