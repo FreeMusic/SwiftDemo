@@ -14,7 +14,7 @@ extension UIColor {
     class func FromRGB(hexadecimal:String)->UIColor{
         var cstr = hexadecimal.trimmingCharacters(in:  CharacterSet.whitespacesAndNewlines).uppercased() as NSString;
         if(cstr.length < 6){
-            return UIColor.clear;
+            return clear;
         }
         if(cstr.hasPrefix("0X")){
             cstr = cstr.substring(from: 2) as NSString
@@ -23,7 +23,7 @@ extension UIColor {
             cstr = cstr.substring(from: 1) as NSString
         }
         if(cstr.length != 6){
-            return UIColor.clear;
+            return clear;
         }
         var range = NSRange.init()
         range.location = 0

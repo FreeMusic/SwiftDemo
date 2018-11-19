@@ -12,6 +12,7 @@ target 'StarAPP' do
   pod 'Kingfisher', '~>3.9.1'
   pod 'SnapKit'
   pod 'HandyJSON', '~> 1.7.1'
+  pod 'MBProgressHUD'
   
   target 'StarAPPTests' do
     inherit! :search_paths

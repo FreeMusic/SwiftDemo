@@ -16,10 +16,6 @@ enum MethodType {
 class NetWorkHelper: NSObject {
     
     static let tool = NetWorkHelper()
-    //模型数组
-    var dataSource = [Any]()
-    //模型
-    var model:Any?
     /**
      请求结果
      */

@@ -13,7 +13,6 @@ import HandyJSON
 class SXYNetWork: NSObject {
     
     static let work = SXYNetWork()//单例
-    let reachAble = SXYNetworkReachability.reachAbility.reachAble//网络状态
     let manager = Alamofire.SessionManager.default
     
     /**
@@ -37,7 +36,7 @@ class SXYNetWork: NSObject {
      GET请求
      */
     func GetRequest(url: String, paramters:[String:Any], _ handler:@escaping complitionHandler) {
-        
+        let reachAble = SXYNetworkReachability.reachAbility.reachAble//网络状态
         if reachAble {
             manager.session.configuration.timeoutIntervalForRequest = 30
             //网络连接
@@ -57,7 +56,7 @@ class SXYNetWork: NSObject {
                             
                             if requestSuccess == false {
                                 //提示
-                                
+                                Factory.alterMessage(message: outHomeModel.msg)
                             }
                         }
                     }
@@ -78,6 +77,7 @@ class SXYNetWork: NSObject {
      */
     func PostRequest(url: String, paramters:[String:Any] , _ handler:@escaping complitionHandler) {
         manager.session.configuration.timeoutIntervalForRequest = 30
+        let reachAble = SXYNetworkReachability.reachAbility.reachAble//网络状态
         if reachAble {
             //网络连接
             manager.request(ServicerIPAddress+url, method: .post, parameters: paramters, encoding: URLEncoding.default, headers: nil).responseString { (response) in
@@ -97,6 +97,7 @@ class SXYNetWork: NSObject {
                             
                             if requestSuccess == false {
                                 //提示
+                                Factory.alterMessage(message: outHomeModel.msg)
                             }
                         }
                     }

@@ -14,5 +14,4 @@
 #import "MyTableViewReFreshVC.h"
 #import "MyTableViewCell.h"
 
-
 #endif /* StarAppHeaderBridge_h */

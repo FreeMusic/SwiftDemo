@@ -7,8 +7,26 @@
 //
 
 import UIKit
+import MBProgressHUD
 
 class Factory: NSObject {
+    
+    /**
+     提示框
+     */
+    class func alterMessage(message:String){
+        //回到主线程
+        DispatchQueue.main.async(execute: {
+            let view = UIApplication.shared.keyWindow!
+            let hud = MBProgressHUD.showAdded(to: view, animated: true)
+            hud.contentColor = UIColor.gray
+            hud.label.text = message
+            hud.label.numberOfLines = 0
+            hud.mode = MBProgressHUDMode.text
+            hud.removeFromSuperViewOnHide = true
+            hud.hide(animated: true, afterDelay: 1.5)
+        })
+    }
     
     /**
      json转字典

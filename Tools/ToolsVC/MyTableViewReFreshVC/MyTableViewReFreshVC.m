@@ -67,6 +67,7 @@
  请求数据成功后 刷新tableView
  */
 - (void)refreshTableViewWithDataSource:(NSArray *)array{
+    
     if (self.page==1) {
         self.dataSource = [NSMutableArray arrayWithArray:array];
         
