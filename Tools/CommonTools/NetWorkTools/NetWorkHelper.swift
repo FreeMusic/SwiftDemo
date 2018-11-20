@@ -8,11 +8,6 @@
 
 import UIKit
 
-enum MethodType {
-    case GET
-    case POST
-}
-
 class NetWorkHelper: NSObject {
     
     static let tool = NetWorkHelper()

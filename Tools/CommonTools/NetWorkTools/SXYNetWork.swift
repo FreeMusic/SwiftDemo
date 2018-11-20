@@ -35,12 +35,20 @@ class SXYNetWork: NSObject {
     /**
      GET请求
      */
-    func GetRequest(url: String, paramters:[String:Any], _ handler:@escaping complitionHandler) {
+    func GetRequest(url: String, paramters:Any?, _ handler:@escaping complitionHandler) {
         let reachAble = SXYNetworkReachability.reachAbility.reachAble//网络状态
         if reachAble {
             manager.session.configuration.timeoutIntervalForRequest = 30
+            let headers = ["Authorization":"c8a32c2928474d3f9319a31ec89f730f"]
+            
+            var param:[String:Any]?
+            
+            if paramters != nil {
+                param = (paramters as! [String:Any])
+            }
+            
             //网络连接
-            manager.request(ServicerIPAddress+url, method: .get, parameters: paramters, encoding: URLEncoding.default, headers: nil).responseString { (response) in
+            manager.request(ServicerIPAddress+url, method: .get, parameters: param, encoding: URLEncoding.default, headers: headers).responseString { (response) in
                 
                 var requestJson:String?
                 var requestSuccess:Bool?
@@ -49,6 +57,9 @@ class SXYNetWork: NSObject {
                 if response.result.isSuccess {
                     
                     if let jsonString = response.result.value {
+                        
+                        RYQLog(jsonString)
+                        
                         requestJson = jsonString
                         if let outHomeModel = JSONDeserializer<OutHomeModel>.deserializeFrom(json: jsonString){
                             

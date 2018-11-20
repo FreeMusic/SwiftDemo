@@ -42,7 +42,7 @@ class GuideAppVC: BaseViewController {
         }
     }
     
-    func tapClick() {
+    @objc func tapClick() {
         
         let app = UIApplication.shared.delegate as! AppDelegate
         

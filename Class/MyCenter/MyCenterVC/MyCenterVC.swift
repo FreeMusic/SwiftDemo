@@ -14,6 +14,11 @@ class MyCenterVC: BaseViewController {
         super.viewDidLoad()
 
         self.title = "个人中心"
+        
+        SXYNetWork.work.GetRequest(url: "/user/center", paramters: nil) { (data) in
+            
+        }
+        
     }
 
 }

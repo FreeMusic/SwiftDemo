@@ -20,8 +20,6 @@ class SXYNetworkReachability: NSObject {
         
         manager?.listener = { status in
             
-            RYQLog(status)
-            
             switch status {
             case .notReachable:
                 reach = false
@@ -34,6 +32,7 @@ class SXYNetworkReachability: NSObject {
                 reach = false
                 SVProgressHUD.showError(withStatus: "网络出错")
             }
+            
         }
         manager?.startListening()
         

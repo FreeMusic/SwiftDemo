@@ -10,6 +10,8 @@
 		180FF65D21A245D100FE9981 /* RankTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180FF65C21A245D100FE9981 /* RankTools.swift */; };
 		180FF66721A2B63700FE9981 /* UIButton+Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180FF66621A2B63700FE9981 /* UIButton+Category.swift */; };
 		180FF66A21A2CBCC00FE9981 /* UITextFiled+Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180FF66921A2CBCC00FE9981 /* UITextFiled+Category.swift */; };
+		18151FB821A3F30600EC78F8 /* RYQWebViewVC+JavaScript.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18151FB721A3F30600EC78F8 /* RYQWebViewVC+JavaScript.swift */; };
+		18151FBA21A3F85A00EC78F8 /* RYQWebViewVC+Progess.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18151FB921A3F85A00EC78F8 /* RYQWebViewVC+Progess.swift */; };
 		1816B7E0219EB63F00E21390 /* MyModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1816B7C6219EB63F00E21390 /* MyModel.swift */; };
 		1816B7E2219EB63F00E21390 /* NetWorkHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1816B7C9219EB63F00E21390 /* NetWorkHelper.swift */; };
 		1816B7E3219EB63F00E21390 /* SXYNetWork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1816B7CA219EB63F00E21390 /* SXYNetWork.swift */; };
@@ -71,6 +73,8 @@
 		180FF65C21A245D100FE9981 /* RankTools.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RankTools.swift; sourceTree = "<group>"; };
 		180FF66621A2B63700FE9981 /* UIButton+Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+Category.swift"; sourceTree = "<group>"; };
 		180FF66921A2CBCC00FE9981 /* UITextFiled+Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextFiled+Category.swift"; sourceTree = "<group>"; };
+		18151FB721A3F30600EC78F8 /* RYQWebViewVC+JavaScript.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RYQWebViewVC+JavaScript.swift"; sourceTree = "<group>"; };
+		18151FB921A3F85A00EC78F8 /* RYQWebViewVC+Progess.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RYQWebViewVC+Progess.swift"; sourceTree = "<group>"; };
 		1816B7C6219EB63F00E21390 /* MyModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyModel.swift; sourceTree = "<group>"; };
 		1816B7C9219EB63F00E21390 /* NetWorkHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetWorkHelper.swift; sourceTree = "<group>"; };
 		1816B7CA219EB63F00E21390 /* SXYNetWork.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SXYNetWork.swift; sourceTree = "<group>"; };
@@ -259,6 +263,8 @@
 			isa = PBXGroup;
 			children = (
 				1816B7D9219EB63F00E21390 /* RYQWebViewVC.swift */,
+				18151FB721A3F30600EC78F8 /* RYQWebViewVC+JavaScript.swift */,
+				18151FB921A3F85A00EC78F8 /* RYQWebViewVC+Progess.swift */,
 			);
 			path = RYQWebViewVC;
 			sourceTree = "<group>";
@@ -810,11 +816,13 @@
 				1862DF2D219BCA9F00CC08E4 /* MessageVC.swift in Sources */,
 				180FF66721A2B63700FE9981 /* UIButton+Category.swift in Sources */,
 				189AB3A7218C4F7500CA6A02 /* UIColor+Category.swift in Sources */,
+				18151FB821A3F30600EC78F8 /* RYQWebViewVC+JavaScript.swift in Sources */,
 				1816B7E3219EB63F00E21390 /* SXYNetWork.swift in Sources */,
 				1816B7EE219EB67B00E21390 /* Factory.swift in Sources */,
 				5436A23420725D610063A187 /* MyTabBar.swift in Sources */,
 				1816B7E9219EB63F00E21390 /* RYQWebViewVC.swift in Sources */,
 				1816B7E2219EB63F00E21390 /* NetWorkHelper.swift in Sources */,
+				18151FBA21A3F85A00EC78F8 /* RYQWebViewVC+Progess.swift in Sources */,
 				5436A25220725FE90063A187 /* MyNavigation.swift in Sources */,
 				1816B7E5219EB63F00E21390 /* BaseViewController.m in Sources */,
 				1816B7F3219EC09900E21390 /* NetWorkHelper+HomeVC.swift in Sources */,

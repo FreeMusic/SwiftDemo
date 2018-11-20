@@ -39,6 +39,7 @@ class MyNavigation: UINavigationController {
             backBtn.addTarget(self, action:  #selector(back), for: .touchUpInside)
             viewController.navigationItem.leftBarButtonItem = UIBarButtonItem(customView: backBtn)
             
+            viewController.hidesBottomBarWhenPushed = true
         }
         
         super.pushViewController(viewController, animated: true)

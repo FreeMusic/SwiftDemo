@@ -60,7 +60,7 @@ extension UILabel {
     /**
      按钮的点击事件
      */
-    func labelClick(tap: UITapGestureRecognizer) -> Void {
+    @objc func labelClick(tap: UITapGestureRecognizer) -> Void {
         let action = objc_getAssociatedObject(tap, &labelActionKey) as! labelAction
         action()
     }
